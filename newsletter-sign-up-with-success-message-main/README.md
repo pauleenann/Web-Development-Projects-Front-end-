@@ -1,9 +1,8 @@
 # Frontend Mentor - Newsletter sign-up form with success message solution
 
-
 This is day 7 of learning Javascript. I used 375px for mobile and 1440px for desktop.
 
-This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -30,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Newsletter sign-up form with success message ](https://65efe1a08df8c86c00ff20a6--legendary-kangaroo-8770d7.netlify.app/)
+- Live Site URL: [Newsletter sign-up form with success message ](https://65efe388166dac6a2acc8524--glistening-treacle-fca3bf.netlify.app/)
 
 ## My process
 
@@ -41,11 +40,9 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 
-
 ### What I learned
 
 I learned css grid and how to validate email.
-
 
 ## Author
 
