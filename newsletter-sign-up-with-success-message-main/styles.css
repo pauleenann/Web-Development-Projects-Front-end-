@@ -121,8 +121,6 @@ body p{
     box-shadow: 1px 10px 20px rgba(252, 89, 116, 0.425);
 }
 
-
-
 .container .cover{
     grid-column-start: 2;
     grid-column-end: 3;
@@ -192,12 +190,21 @@ body p{
 
     .container .content{
         padding-top: 50px;
+        padding-right: 50px;
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 2;
         grid-row-end: 3;
         justify-content: start;
         height: 650px;
+    }
+
+    .container .content ul li{
+        line-height: 15px;
+    }
+
+    .container .content form{
+        width: 100%;
     }
 
     .container .cover{
