@@ -25,3 +25,9 @@ document.getElementById('submit').addEventListener('click', function(event){
     // document.getElementById('container').style.display ='none'; 
 
 })
+
+document.getElementById('dismiss').addEventListener('click', function(event){
+    document.getElementById('thankyou-page').style.display = 'none';
+    document.getElementById('container').style.display ='grid';
+    document.getElementById('email').value = "";
+})
