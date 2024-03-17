@@ -1,0 +1,1 @@
+document.getElementById('finalrate').innerHTML = localStorage.getItem('finalrate');

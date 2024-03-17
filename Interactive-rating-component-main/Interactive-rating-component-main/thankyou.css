@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p{
+    font-size: 15px;
+}
+
+.container{
+    width: 450px;
+    height: 450px;
+    background-color: var(--Dark-Blue);
+    padding: 50px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.rate-container{
+    margin-top: 30px;
+    background-color: hsla(240, 1%, 36%, 0.199);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.finalrate-number , .rate-container{
+    color: rgb(255, 102, 0);
+    font-size: 16px;
+}
+
+.container h1{
+    margin: 35px 0 10px 0;
+    color: var(--White);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.message {
+    text-align: center;
+    color: var(--Light-Grey);
+    line-height: 1.5;
+    font-size: 15.5px;
+}

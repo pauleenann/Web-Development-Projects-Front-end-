@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+p{
+    font-size: 15px;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: var(--Dark-Blue);
+    padding: 50px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container img{
+    width: 60px;
+    height: 60px;
+    background-color: hsla(240, 1%, 36%, 0.199);
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.container header h1 {
+    color: var(--White);
+    padding: 40px 0 0 0;
+    font-size: 2.1rem;
+    font-weight: 300;
+}
+
+.container p{
+    color: var(--Light-Grey);
+    font-size: 1.1rem;
+    line-height: 1.5;
+    padding-top: 10px;
+}
+
+.container ul{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container ul li{
+    list-style: none;
+    background-color: hsla(240, 1%, 36%, 0.199);
+    padding: 20px 25px;
+    border-radius: 50%;
+    color: var(--Light-Grey);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.container button {
+    background-color: rgb(255, 102, 0);
+    color: var(--White);
+    font-size: 18px;
+    letter-spacing: 3px;
+    padding: 20px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    margin-top: 25px;
+    font-weight: 700;
+}
+
+.container button a{
+    text-decoration: none;
+}
+
+.container button:hover{
+    background-color: var(--White);
+    color: rgb(255, 102, 0);
+    cursor: pointer;
+}
+
+.container ul li:hover{
+    background-color: rgb(255, 102, 0);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.container ul li:active{
+    background-color: var(--Light-Grey);
+}
