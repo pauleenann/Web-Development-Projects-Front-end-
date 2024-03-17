@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+:root{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--Red) url('images/bg-intro-desktop.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+}
+
+.container div {
+    padding: 10px;
+}
+
+.container{
+    color: #fff;
+}
+
+.container .description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .description h1{
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+.container .data-input .freetrial{
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 65px;
+    background-color: var(--Blue);
+    margin-bottom: 20px;
+}
+
+
+.container .data-input .freetrial p{
+    font-size: 1rem;
+    color: var(--Grayish-Blue);
+    text-align: center;
+}
+
+.container .data-input .freetrial p span{
+    font-weight: 600;
+    color: #fff;
+}
+
+.container .data-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container .data-input .form-container{
+    width: 100%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+.container .data-input div form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.container .data-input .form-container form input{
+    border: none;
+    color: var(--Dark-Blue);
+    font-weight: 600;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.container .data-input .form-container form input:focus{
+    border-color: transparent;
+    outline: none;
+}
+
+.container .data-input .form-container form img{
+    width: 25px;
+    height: 25px;
+    display: none;
+}
+
+.container .data-input .form-container form div{
+    width: 100%;
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+    display: flex;align-items: center;
+}
+
+/* .container .data-input form input{
+    padding: 20px;
+    width: 100%;
+    border: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+    color: var(--Dark-Blue);
+    font-weight: 600;
+    font-size: 1rem;
+} */
+.container .data-input form button{
+    border: none;
+    padding: 15px;
+    background-color: var(--Green);
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 1px 2px #009b4d;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.container .data-input .form-container .terms-services{
+    text-align: center;
+    font-size: 0.7rem;
+    color: var(--Grayish-Blue);
+    margin-bottom: 50px;
+}
+
+.container .data-input .form-container .terms-services a{
+    color: var(--Red);
+    text-decoration: none;
+    font-weight: 700;
+} 
+
+.container .data-input .form-container .error-message{
+    color:var(--Red);
+    font-size: 0.6rem;
+    text-align: end;
+    font-style: italic;
+    font-weight: 600;
+    display: none;
+}
+
+@media screen and (max-width:960px) {
+    body{
+        padding: 50px 0;
+    }
+    .container{
+        grid-template-columns: 100%;
+        width: 90%;
+    }
+
+    .container .description{
+        text-align: center;
+    }
+
+    .container .description h1{
+        font-size: 1.5rem;
+    }
+
+    .container .data-input .freetrial p{
+        font-size: 0.8rem;
+        padding: 60px;
+        
+    }
+
+    .container .data-input .form-container{
+        padding: 20px;
+    }
+
+    .container .data-input .form-container form input{
+        font-weight: 600;
+        font-size: 0.7rem;
+        padding: 5px;
+        background-color: #fff;
+    }
+
+    .container .data-input form button{
+        font-size: 0.8rem;
+    }
+
+    .container .data-input .form-container .terms-services{
+        margin-bottom: 20px;
+    }
+
+    
+}
+
