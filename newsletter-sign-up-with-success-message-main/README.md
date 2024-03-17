@@ -29,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Newsletter sign-up form with success message ](https://65efe388166dac6a2acc8524--glistening-treacle-fca3bf.netlify.app/)
+- Live Site URL: [Newsletter sign-up form with success message ](https://65f1aef81ca983229bb02c0d--mellow-liger-88df40.netlify.app/)
 
 ## My process
 
