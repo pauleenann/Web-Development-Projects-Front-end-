@@ -38,7 +38,7 @@ p{
     padding: 35px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
     box-shadow: 1px 1px 50px #5c5b5b17;
     border-radius: 5px;
 }
@@ -88,8 +88,7 @@ img{
     justify-content: start;
     gap: 15px;
     width: 100%;
-    padding: 10px;
-    
+    padding: 12px;
     border-radius: 5px;
     box-shadow: 1px 1px 5px #3838381c;
 }
