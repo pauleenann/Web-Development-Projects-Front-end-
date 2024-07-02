@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+  <div class="my-balance">
+    <div class="balance">
+      <h1>My balance</h6>
+      <p>$921.48</h1>
+    </div>
+    <div class="icon">
+      <img src="images/logo.svg" alt="">
+    </div>
+  </div>
+
+  <div class="expenses">
+    <p class="ex-text">Spending - Last 7 days</p>
+    <canvas id="expenses-chart">
+
+    </canvas>
+    <hr>
+    <div class="total-container">
+      <div class="total">
+        <p class="total-text">Total this month</p>
+        <p class="total-expenses">$478.833</p>
+      </div>
+      <div class="percent">
+        <p class="plus">+2.4%</p>
+        <p class="last-month">from last month</p>
+      </div>
+    </div>
+    
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="data.js"></script>
+</body>
+</html>
