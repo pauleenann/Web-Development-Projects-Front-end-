@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Expenses chart component](https://6683d963b62bfa37623e884a--eloquent-lamington-55ae09.netlify.app/)
 
 ## My process
 
