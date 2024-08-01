@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Time tracking dashboard](https://66ab5d10d51f0ec95f44053c--earnest-sundae-98d393.netlify.app/)
+- Live Site URL: [Time tracking dashboard](https://66ab61e9fd8f5ac2736fb73c--whimsical-wisp-c6a55d.netlify.app/)
 
 ## My process
 

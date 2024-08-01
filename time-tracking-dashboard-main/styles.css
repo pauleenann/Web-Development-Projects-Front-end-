@@ -33,11 +33,11 @@ body{
 }
 
 .container{
-    width: 70%;
-    height: 50%;
+    width: 1000px;
+    height: 500px;
     /* background-color: aqua; */
     display: grid;
-    grid-template-columns: 20% 70%;
+    grid-template-columns: 25% 75%;
     column-gap: 20px;
 }
 
@@ -76,7 +76,7 @@ body{
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 50px;
 }
 
 .time-button{
@@ -84,7 +84,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 14px;
+    gap: 20px;
 }
 
 .profile-pic{
@@ -102,12 +102,12 @@ body{
 }
 
 .report{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 300;
 }
 
 .user-name{
-    font-size: 1.7rem;
+    font-size: 2.5em;
     font-weight: 300;
 }
 
@@ -115,6 +115,7 @@ button{
     cursor: pointer;
     background-color: transparent;
     border: none;
+    font-size: 1.2rem;
     color: var(--Desaturated-blue);
 }
 
@@ -139,7 +140,7 @@ button:hover{
     font-weight: 300;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
 }
 
 .time-box div:first-child div:first-child{
@@ -150,7 +151,7 @@ button:hover{
     height: 20px;
     color: var(--White);
     padding: 0;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     
 }
 
@@ -160,12 +161,12 @@ button:hover{
 }
 
 .time-box div:first-child div:last-child p:first-child{
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 5px;
 }
 
 .time-box div:first-child div:last-child p:last-child{
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     color: var(--Desaturated-blue);
 }
 
@@ -211,7 +212,8 @@ button:hover{
     background-color: var(--Soft-orange-self-care);
 }
 
-@media screen and (max-width:700px) {
+
+@media screen and (max-width:1100px) {
     body{
         height: 150vh;
         justify-content: start;
@@ -219,7 +221,9 @@ button:hover{
     }
 
     .container{
-        column-gap: 0;        grid-template-columns: 100%;       row-gap: 20px;
+        width: 80%;
+        column-gap: 0;        grid-template-columns: 100%;       
+        row-gap: 20px;
         justify-content: center;
         
     }
@@ -243,6 +247,10 @@ button:hover{
         align-items: center;
     }
 
+    button{
+        font-size: 0.8rem;
+    }
+
     .time-button{
         flex-direction: row;
         justify-content: space-evenly;
@@ -251,6 +259,7 @@ button:hover{
     .user{
         flex-direction: row;
         align-items: center;
+        gap: 20px;
     }
 
     .report{
@@ -263,6 +272,14 @@ button:hover{
     .time-box div:first-child div:last-child p:first-child{
         font-size: 1.6rem;
       
+    }
+
+    .time-box div:first-child div:last-child p:last-child{
+        font-size: 0.8rem;
+    }
+
+    .time-box div:first-child div:first-child{
+        font-size: 0.8rem;
     }
     
 }
