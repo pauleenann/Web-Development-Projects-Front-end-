@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --purple: #652CD1;
+    --light-purple:  #845EEE;
+    --heavy-dark-gray: #121826;
+    --medium-dark-gray: #212936;
+    --dark-gray:#394150;
+    --gray:#4D5562;
+    --light-gray: #A1A1A9;
+    --white: #E5E7EB;
+    --heading: 1.25rem;
+    --tab-text: 0.875rem;
+    --body-text: 1rem;
+    --label-small-text: 0.75rem;
+}
+
+.confirm-container{
+    font-size: var(--body-text);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.confirm-label{
+    color: var(--light-gray);
+}
+
+.confirm-info{
+    color: var(--white);
+}
+
+.confirm-info-name{
+    text-transform: capitalize;
+}
+
+.confirm-container ul{
+    margin-left: 25px;
+}
+
+.confirm-name-email{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.confirm-topic{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.confirm-topic li{
+    margin-bottom: 6px;
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --purple: #652CD1;
+    --light-purple:  #845EEE;
+    --heavy-dark-gray: #121826;
+    --medium-dark-gray: #212936;
+    --dark-gray:#394150;
+    --gray:#4D5562;
+    --light-gray: #A1A1A9;
+    --white: #E5E7EB;
+    --heading: 1.25rem;
+    --tab-text: 0.875rem;
+    --body-text: 1rem;
+    --label-small-text: 0.75rem;
+}
+
+.register-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.register-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.register-input label{
+    font-size: var(--label-small-text);
+    color: var(--light-gray);
+}
+
+.register-input input{
+    padding: 13px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 1px solid var(--light-gray);
+    color: var(--white);
+}
+
+.register-container input:focus{
+    background-color: transparent;
+}
+
+.error{
+    font-size: var(--label-small-text);
+    color: var(--light-gray);
+    font-style: italic;
+}
+
+@media screen and (max-width:700px) {
+    .register-container{
+        gap: 10px;
+    }
+}

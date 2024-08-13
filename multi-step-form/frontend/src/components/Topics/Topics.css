@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+:root{
+    --purple: #652CD1;
+    --light-purple:  #845EEE;
+    --heavy-dark-gray: #121826;
+    --medium-dark-gray: #212936;
+    --dark-gray:#394150;
+    --gray:#4D5562;
+    --light-gray: #A1A1A9;
+    --white: #E5E7EB;
+    --heading: 1.25rem;
+    --tab-text: 0.875rem;
+    --body-text: 1rem;
+    --label-small-text: 0.75rem;
+}
+
+.topics-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.topic-box{
+    padding: 18px 0;
+}
+
+.topic-box input{
+    display: none;
+}
+
+.topic{
+    background-color: var(--dark-gray);
+    padding: 15px;
+    text-align: start;
+    border-radius: 10px;
+    color: var(--light-gray);
+    cursor: pointer;
+}
+
+.topic:hover{
+    background-color: var(--purple);
+    color: var(--white);
+}
+
+.topic-box input[type='checkbox']:checked + .topic{
+    background-color: var(--purple);
+    color: var(--white);
+    border: 1px solid var(--white);
+}
+
+.error{
+    font-size: var(--label-small-text);
+    color: var(--light-gray);
+    font-style: italic;
+}
+
+
+/*
+.topics-container button{
+    text-align: start;
+    padding: 15px;
+    font-size: var(--body-text);
+    background-color: var(--dark-gray);
+    color: var(--light-gray);
+    border: 1px solid var(--light-gray);
+    border-radius: 10px;
+} */
