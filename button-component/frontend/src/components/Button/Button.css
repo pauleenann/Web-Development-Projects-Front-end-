@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange: rgb(255, 81, 0);
+    --black: rgb(14, 14, 14);
+    --light-gray: rgba(158, 158, 158, 1);
+    --dark-blue: rgba(9, 15, 49, 1);
+    --dark-gray: rgba(79, 79, 79, 1);
+    --default-button-bg: rgba(224, 224, 224, 1);
+    --default-button-text:rgba(63, 63, 63, 1);
+    --default-button-hover-focus: rgba(174, 174, 174, 1);
+    --variant-outline-text: rgba(61, 90, 254, 1);
+    --variant-outline-hover-focus: rgba(41, 98, 255, 0.1);
+    --local-grocery-primary:  rgba(41, 98, 255, 1);
+    --primary-hover-focus: rgba(0, 57, 203, 1);
+    --secondary: rgba(69, 90, 100, 1);
+    --secondary-hover-focus: rgba(28, 49, 58, 1);
+    --danger: rgba(211, 47, 47, 1);
+    --danger-hover-focus: rgba(154, 0, 7, 1);
+    --white: rgb(255, 255, 255);
+    --button-font: "Noto Sans JP", sans-serif;
+    --element-font: "Ubuntu Mono", monospace;
+    --default-shadow: 0px 2px 3px 0px rgba(51, 51, 51, 0.2);
+
+}
+
+
+button{
+    cursor: pointer;
+    background-color: var(--default-button-bg);
+    color: var(--default-button-text);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--button-font);
+    width: 81px;
+    height: 36px;
+    border-radius: 6px;
+    border: none;
+    box-shadow: var(--default-shadow);
+    transition: all 0.2s linear ;
+}
+
+button:hover, button:focus{
+    background-color: var(--default-button-hover-focus);
+}
+
+.outline{
+    background-color: transparent;
+    box-shadow: none;
+    border: 1px solid var(--variant-outline-text);
+    color: var(--variant-outline-text);
+}
+
+.outline:hover, .outline:focus{
+    background-color: var(--variant-outline-hover-focus);
+}
+
+
+
+.disableShadow, .disableShadow:hover, .disableShadow:focus{
+    background-color: var(--variant-outline-text);
+    color: var(--white);
+    box-shadow: none;
+}
+
+.disabled{
+    background-color: var(--default-button-bg);
+    color: var(--light-gray);
+}
+
+.text{
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.local_grocery_store{
+    width: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--variant-outline-text);
+    color: var(--white);
+}
+
+.local_grocery_store:hover, .local_grocery_store:focus{
+    background-color: var(--variant-outline-text);
+}
+
+.sm, .md, .lg{
+    background-color: var(--variant-outline-text);
+    color: var(--white);
+    
+}
+
+.sm{
+    width: 73px;
+    height: 32px;
+}
+
+.md{
+    width: 81px;
+    height: 36px;
+}
+
+.lg{
+    width: 93px;
+    height: 42px;
+}
+
+.sm:hover, .sm:focus, .lg:hover, .lg:focus, .md:hover, .md:focus{
+    background-color: var(--variant-outline-text);
+    color: var(--white);
+}
+
+.primary{
+    background-color: var(--variant-outline-text);
+    color: var(--white);
+}
+
+.primary:hover, .primary:focus{
+    background-color: var(--primary-hover-focus);
+}
+
+.secondary{
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+.secondary:hover, .secondary:focus{
+    background-color: var(--secondary-hover-focus);
+}
+
+.danger{
+    background-color: var(--danger);
+    color: var(--white);
+}
+
+.danger:hover, .danger:focus{
+    background-color: var(--danger-hover-focus);
+}
