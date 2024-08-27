@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* color */
+    --logo: rgb(248, 109, 109);
+    --logo-hover: rgb(240, 95, 95);
+    --dark-gray: rgba(51, 51, 51, 1);
+    --medium-gray: rgba(79, 79, 79, 1);
+    --light-gray: rgba(130, 130, 130, 1);
+    --ligthest-gray: rgba(189, 189, 189, 1);
+    --lightest2-gray: rgba(242, 242, 242, 1);
+    --white: rgba(255, 255, 255, 1);
+    --shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.1);
+    --overlay: rgba(79, 79, 79, 0.4);
+}
+
+
+.overlay{    
+    position: absolute;
+    background-color: var(--overlay);
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+
+}
+
+.modal-container{
+    background-color: var(--white);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 460px;
+    position: fixed;
+    padding: 30px;
+}
+
+.input-box div{
+    padding: 0;
+}
+
+.location-button, .guests-button{
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    padding: 8px 20px;
+    background-color: var(--white);
+    border-radius: 16px;
+    border: none;
+}
+
+.location-button:hover, .guests-button:hover{
+    border: 1px solid var(--dark-gray);
+}
+
+.modal-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.location-button span, .guests-button span{
+    font-family: "Mulish", sans-serif;
+    text-transform: uppercase;
+    font-size: 9px;
+    font-weight: 800;
+    color: var(--dark-gray);
+}
+
+.location-button p, .guests-button p{
+    font-family: "Mulish", sans-serif;  
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.location-button p{
+    color: var(--dark-gray);
+}
+
+.guests-button p{
+    color: var(--ligthest-gray);
+}
+
+.modal-search .search-button{
+    width: 127px;
+    height: 48px;
+    border-radius: 16px;
+    padding: 8px;
+    background-color: var(--logo);
+    color: var(--white);
+    transition: all 0.2s linear;
+}
+
+.modal-search .search-button:hover{
+    background-color: var(--logo-hover);
+}
+
+.search-button .fa-magnifying-glass{
+    color: var(--white);
+}
+
+
+.location-choice{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.location-choice label input{
+    display: none;
+}
+
+.location-choice label{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.location-choice label:hover{
+    color: var(--logo);
+}
+
+.guests-filter{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.adults-text, .children-text{
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.adults-description, .children-description{
+    font-family: "Mulish", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.decrease-button, .increase-button{
+    width: 23px;
+    height: 23px;
+    border-radius: 4px;
+    border: 1px solid var(--light-gray);
+    color: var(--light-gray);
+    background-color: var(--white);
+    transition: all 0.2s linear;
+}
+
+.decrease-button:hover, .increase-button:hover{
+    background-color: var(--light-gray);
+    color: var(--white);
+}
+
+.adults-button, .children-button{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.close-edit-modal{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .close-edit-modal{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: "Mulish", sans-serif;
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--dark-gray);
+        margin-bottom: 10px;
+        
+    }
+    .modal-container{
+        height: 632px;
+    }
+    .modal-search{
+        display: none;
+    }
+    .location-choice,.guests-filter{
+        padding: 15px 20px;
+    }
+    .mobile-modal-search{
+        display: flex;
+        justify-content: center;
+    }
+    .mobile-search-button{
+        width: 126px;
+        height: 48px;
+        border-radius: 16px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        background-color: var(--logo);
+        color: var(--white);
+        margin-top: 100px;
+        transition: all 0.2s linear;
+    }
+    .mobile-search-button:hover{
+        background-color: var(--logo-hover);
+    }
+    .mobile-exit{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: var(--dark-gray);
+    }
+    .location-button,.guests-button{
+        padding: 8px 10px;
+    }
+}

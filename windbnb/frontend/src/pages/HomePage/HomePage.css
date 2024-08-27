@@ -73,8 +73,8 @@
     font-weight: 400;
 }
 
-.fa-magnifying-glass{
-    color: var(--logo);
+.search-icon .fa-magnifying-glass{
+    color: var(--logo) !important;
     font-size: 17.05px;
 }
 
@@ -106,4 +106,25 @@
     display: flex;
     justify-content: center;
     padding: 0;
+}
+
+@media screen and (max-width:700px) {
+    .homepage-container{
+        padding: 30px 0;
+    }
+    .search-button-box{
+        justify-content: center;
+        padding: 30px 20px 40px;
+    }
+    .header-text{
+        padding: 0 30px;
+        font-size: 18px;
+        
+    }
+    .total-results{
+        padding: 0 30px;
+    }  
+    .home-card-box{
+        padding: 20px 0;
+    }
 }

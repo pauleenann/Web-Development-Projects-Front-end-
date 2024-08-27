@@ -8,7 +8,7 @@ const Card = ({city,country,superHost,title,rating,maxGuests,type,beds,photo}) =
         <div className="card-info">
             <div className="room-type">
                 {superHost?<span>super host</span>:''}
-                <p className='room-amenities m-0'>{type}  {beds!=null?` . ${beds} beds`:''}</p>
+                <p className='room-amenities m-0'>{type}  {beds!=null?beds==1?` . ${beds} bed`:` . ${beds} beds`:''}</p>
             </div>
             <div className="room-rating">
                 <i class="fa-solid fa-star"></i>

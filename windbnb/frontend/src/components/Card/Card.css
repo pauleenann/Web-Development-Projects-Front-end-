@@ -85,7 +85,21 @@
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: var(--dark-gray);
-    
+    color: var(--dark-gray); 
+}
 
+@media screen and (max-width:700px) {
+    .card-container{
+        align-items: center;
+    }
+   
+    .card-img{
+        width: 350px;
+        height: 238.35px;
+        
+    }
+    .card-info,.card-description{
+        width: 350px;
+    }
+    
 }
