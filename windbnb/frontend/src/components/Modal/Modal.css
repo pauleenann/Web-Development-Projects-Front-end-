@@ -177,6 +177,10 @@
     display: none;
 }
 
+.mobile-modal-search{
+    display: none;
+}
+
 @media screen and (max-width:700px) {
     .close-edit-modal{
         display: block;

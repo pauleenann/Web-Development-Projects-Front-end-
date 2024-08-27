@@ -108,6 +108,7 @@
     padding: 0;
 }
 
+
 @media screen and (max-width:700px) {
     .homepage-container{
         padding: 30px 0;
