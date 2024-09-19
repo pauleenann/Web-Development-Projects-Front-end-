@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+// font
+$primaryFont: "Raleway", system-ui;
+$fontWeights: (
+    "regular": 500,
+    "medium": 600,
+    "bold":700,
+);
+
+$fontSize:(
+    "xx-small":14px,
+    "x-small":16px,
+    "small": 18px,
+    "s-normal": 24px,
+    "normal": 36px,
+    "big": 64px,
+);
+
+// colors
+$gray: #6E707A;
+$blue: #1E213A;
+$white: #E7E7EB;
+$light-gray: #A09FB1;
+$dark-gray: #88869D;
+$dark-blue: #100E1D;
+$darkest-blue: #110E3C;
+$fahrenheitBox: #585676;
+$skyBlue: #3C47E9
+
