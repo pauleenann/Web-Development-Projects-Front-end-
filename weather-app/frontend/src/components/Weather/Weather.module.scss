@@ -1,0 +1,43 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+@import '../../styles/functions';
+
+.weather_box{
+    @include flexCenter(column);
+    background-color: $blue;
+    width: 120px;
+    height: 177px;
+    box-sizing: border-box;
+    padding: 10px;
+    color: $white;
+    gap: 15px;
+    font-family: $primaryFont;
+    font-size: fontSize(x-small);
+
+    p{
+        margin: 0px;
+    }
+
+    img{
+        width: 62px;
+        height: 62px;
+
+    }
+}
+
+.weather_degree{
+    @include flexBetween;
+    width: 80%;
+
+    p{
+        margin: 0;
+    }
+}
+
+.celcius1{
+    color: $white;
+}
+
+.celcius2{
+    color: $light-gray;
+}

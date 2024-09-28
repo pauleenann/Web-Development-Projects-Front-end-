@@ -9,12 +9,15 @@ $fontWeights: (
 );
 
 $fontSize:(
+    "xxx-small":12px,
     "xx-small":14px,
     "x-small":16px,
     "small": 18px,
     "s-normal": 24px,
     "normal": 36px,
+    "x-normal":48px,
     "big": 64px,
+    "s-big": 144px
 );
 
 // colors
@@ -26,5 +29,7 @@ $dark-gray: #88869D;
 $dark-blue: #100E1D;
 $darkest-blue: #110E3C;
 $fahrenheitBox: #585676;
-$skyBlue: #3C47E9
+$skyBlue: #3C47E9;
+$yellow:#FFEC65;
 
+$shadow: 0px 4px 4px 0px #00000040;

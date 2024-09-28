@@ -1,0 +1,114 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+@import '../../styles/functions';
+
+.container{
+    background-color: $blue;
+    width: 30%;
+    height: 100%;
+    overflow: hidden
+}
+
+.search{
+    @include flexBetween;
+    padding: 40px;
+}
+
+.search_button{
+    width: 161px;
+    height: 40px;
+    background-color: $gray;
+    color: $white;
+    font-family: $primaryFont;
+    font-size: fontSize(x-small);
+    font-weight: fontWeight(regular);
+    border: none;
+    box-shadow: $shadow;
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    &:hover{
+        background-color: $dark-blue
+    }
+}
+
+.current_location{
+    @include flexCenter(row);
+    color: $white;
+    background-color: $gray;
+    width: 40px;
+    height: 40px;
+    border: none;
+    box-shadow: $shadow;
+    font-size: fontSize(s-normal);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s linear;
+
+    &:hover{
+        background-color: $dark-blue
+    }
+}
+
+.weather_icon{
+    @include flexCenter(row);
+    width: 100%;
+ 
+    // background-image: url('../../assets//Cloud-background.png');
+    // background-size:contain;
+    // background-repeat: no-repeat;
+    
+}
+
+.bg{
+    width: 100%;
+    opacity: 0.1;
+}
+
+.weather_today_icon{
+    position: absolute;
+    width: 202px;
+    height: 234px;
+}
+
+.weather_info{
+    @include flexCenter(column);
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px
+}
+
+.weather_degree{
+    font-size: fontSize(s-big);
+    font-family: $primaryFont;
+    color: $white;
+}
+
+.weather_degree span{
+    font-size: fontSize(x-normal);
+    font-family: $primaryFont;
+    color: $light-gray
+}
+
+.current_date_location{
+    @include flexCenter(column);
+    gap: 10px;
+    color: $dark-gray;
+    font-size: fontSize(small);
+}
+
+.weather_today{
+    color: $white;
+    font-size: fontSize(normal);
+    font-size: $primaryFont;
+    color: $light-gray;
+    font-weight: fontWeight(medium)
+}
+
+.location{
+    @include flexCenter(row);
+    gap: 5px;
+}
+
